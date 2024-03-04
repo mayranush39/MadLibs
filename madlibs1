@@ -2,7 +2,6 @@
 
 import random
 
-
 name = input ("Hi, what is your name?\n")
 print (name +  " if you like reading somewhat funny stories...")
 
