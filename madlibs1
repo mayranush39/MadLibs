@@ -1,0 +1,33 @@
+#Function to prompt the user for input and generate a story by randomly choosing one of the 2 given templates
+
+import random
+
+
+name = input ("Hi, what is your name?\n")
+print (name +  " if you like reading somewhat funny stories...")
+
+
+
+noun1 = input ("Enter means of transportation:\n")
+noun2 = input ("Enter measure of time:\n")
+plural = input ("Enter magical creature (Plural):\n")
+adjective1 = input ("Enter an adjective:\n")
+verb = input ("Enter an action:\n")
+noun3 = input ("Enter an animal:\n")
+adjective2 = input ("Enter an adjective:\n")
+noun4 = input ("Enter part of the body (plural):\n")
+adverb = input ("Enter a word that describes an action:\n")
+numeral = input ("Enter a number:\n")
+noun5 = input ("Enter a household item:\n")
+noun6 = input ("Enter plant name (plural):\n")
+adjective3 = input ("Enter an adjective:\n")
+noun7 = input ("Enter something you wear on your head:\n")
+
+templates = [
+    f"I arrived at the court in a {noun1}. The court building was built {numeral}{noun2} ago. There were a lot of {plural} infront of the main entrance. The judge was holding {noun5} and wearing a {adjective3}{noun7} on their .. All the guards had {numeral} {noun4}. They told me if I want to come in I'll have to {verb} first. I mentioned that I am with {noun3}. I complemented them saying that the {noun3} thinks they are very {adjective2}. The guard said they will not let us in unless we gift them {noun6}. We decided to join the {plural} as a sign of protest!",
+   f"I've decided not to use the {noun1} for entire {numeral}{noun2}. Everyone who knew me thought it is an {adjective1} idea. Most of them chose to {verb} as a sign of approval. At first I've tryed to walk as the {noun3}. It got me really {adjective2}. My {noun4} were very exausted in the beginning. The more I practiced the more my {noun4} got used to it. After a while I was moving around the city {adverb}. By the end of this experiment I saved {numeral} drams and hid it underneath the {noun5}. All the {noun6} were very happy for me. Well, reader maybe I was made to walk like a {adjective3}{noun3}."]
+
+story = random.choice(templates)
+
+print("Here is your story, " +name)
+print(story)
